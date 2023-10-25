@@ -19,8 +19,12 @@ Object.getOwnPropertyNames(object);
 ```js
 Object.values(object);
 ```
+:bulb: 
+```
+
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI1ODgxMzE3XX0=
+eyJoaXN0b3J5IjpbMTA0OTk0MzU4Niw3MjU4ODEzMTddfQ==
 -->
