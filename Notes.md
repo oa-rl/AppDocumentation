@@ -19,12 +19,12 @@ Object.getOwnPropertyNames(object);
 ```js
 Object.values(object);
 ```
-:bulb: 
+:bulb: Inside a function there is a variable 
 ```
 
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0OTk0MzU4Niw3MjU4ODEzMTddfQ==
+eyJoaXN0b3J5IjpbLTE4NDQ1NjE1NTAsNzI1ODgxMzE3XX0=
 -->
