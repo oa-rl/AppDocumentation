@@ -19,14 +19,14 @@ Object.getOwnPropertyNames(object);
 ```js
 Object.values(object);
 ```
-:bulb: Inside a function there is a variable called arguments, it variable contains all parameters have sent inside the function
+:bulb:  Inside a function there is a variable called arguments, which contains all parameters sent within the function.
 ```js
-function test(){
+function test(temp1,temp2,temp3){
 	console.log(arguments);
 }
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI0NzYwMTYwLDcyNTg4MTMxN119
+eyJoaXN0b3J5IjpbLTQ2MjEzNzE4Nyw3MjU4ODEzMTddfQ==
 -->
