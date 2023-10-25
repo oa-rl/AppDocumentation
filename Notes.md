@@ -19,14 +19,14 @@ Object.getOwnPropertyNames(object);
 ```js
 Object.values(object);
 ```
-:bulb: Inside a function there is a variable called arguments
+:bulb: Inside a function there is a variable called arguments, it variable contains all parameters have 
 ```js
 function test(){
-	console.log(arguments)
+	console.log(arguments);
 }
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTUxNTQyNzcsNzI1ODgxMzE3XX0=
+eyJoaXN0b3J5IjpbNzY0NTY3MzYzLDcyNTg4MTMxN119
 -->
