@@ -99,8 +99,8 @@ SOAP-UI
 23. For implement see bi bussiness 390, search this "services.AddSingleton<wsCIFXNIT>" in all project
 
 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
-
+https://nuget.pkg.github.com/IncubadoraDigital/index.json
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTczODEwNTg2LDIyNTUzMjMwNCwzNzI0Nz
-I2MzBdfQ==
+eyJoaXN0b3J5IjpbLTczOTE4ODg5MCwyMjU1MzIzMDQsMzcyND
+cyNjMwXX0=
 -->
