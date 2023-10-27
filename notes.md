@@ -105,7 +105,63 @@ https://nuget.pkg.github.com/IncubadoraDigital/index.json
 
 
 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
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<configuration>
+
+<packageSources>
+
+<add  key="nuget.org"  value="https://api.nuget.org/v3/index.json"  protocolVersion="3" />
+
+<add  key="github"  value="https://nuget.pkg.github.com/IncubadoraDigital/index.json" />
+
+<add  key="Microsoft Visual Studio Offline Packages"
+
+value="C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\" />
+
+</packageSources>
+
+<packageRestore>
+
+<add  key="enabled"  value="True" />
+
+<add  key="automatic"  value="True" />
+
+</packageRestore>
+
+<bindingRedirects>
+
+<add  key="skip"  value="False" />
+
+</bindingRedirects>
+
+<packageSourceCredentials>
+
+<github>
+
+<add  key="Username"  value="61936_bindust" />
+
+<add  key="ClearTextPassword"  value="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" />
+
+</github>
+
+</packageSourceCredentials>
+
+<packageManagement>
+
+<add  key="format"  value="0" />
+
+<add  key="disabled"  value="False" />
+
+</packageManagement>
+
+</configuration>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3OTIyOTI0MSwtNzM5MTg4ODkwLDIyNT
-UzMjMwNCwzNzI0NzI2MzBdfQ==
+eyJoaXN0b3J5IjpbLTgwNzA0NzQ4MywxODc5MjI5MjQxLC03Mz
+kxODg4OTAsMjI1NTMyMzA0LDM3MjQ3MjYzMF19
 -->
