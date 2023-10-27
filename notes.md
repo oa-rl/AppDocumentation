@@ -98,8 +98,9 @@ SOAP-UI
 22. next, next, finish
 23. For implement see bi bussiness 390, search this "services.AddSingleton<wsCIFXNIT>" in all project
 
-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
+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
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI1NTMyMzA0LDM3MjQ3MjYzMF19
+eyJoaXN0b3J5IjpbNTczODEwNTg2LDIyNTUzMjMwNCwzNzI0Nz
+I2MzBdfQ==
 -->
