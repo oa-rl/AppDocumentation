@@ -98,9 +98,14 @@ SOAP-UI
 22. next, next, finish
 23. For implement see bi bussiness 390, search this "services.AddSingleton<wsCIFXNIT>" in all project
 
-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
+
 https://nuget.pkg.github.com/IncubadoraDigital/index.json
+
+
+
+
+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
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczOTE4ODg5MCwyMjU1MzIzMDQsMzcyND
-cyNjMwXX0=
+eyJoaXN0b3J5IjpbMTg3OTIyOTI0MSwtNzM5MTg4ODkwLDIyNT
+UzMjMwNCwzNzI0NzI2MzBdfQ==
 -->
