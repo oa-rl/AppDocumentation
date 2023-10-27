@@ -104,7 +104,7 @@ https://nuget.pkg.github.com/IncubadoraDigital/index.json
 
 
 
-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
+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
 
 
 
@@ -162,6 +162,7 @@ value="C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\" />
 
 </configuration>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNzA0NzQ4MywxODc5MjI5MjQxLC03Mz
-kxODg4OTAsMjI1NTMyMzA0LDM3MjQ3MjYzMF19
+eyJoaXN0b3J5IjpbLTE1NzEyODA1MiwtODA3MDQ3NDgzLDE4Nz
+kyMjkyNDEsLTczOTE4ODg5MCwyMjU1MzIzMDQsMzcyNDcyNjMw
+XX0=
 -->
