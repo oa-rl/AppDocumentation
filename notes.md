@@ -97,74 +97,8 @@ SOAP-UI
 21. Clic ir
 22. next, next, finish
 23. For implement see bi bussiness 390, search this "services.AddSingleton<wsCIFXNIT>" in all project
-
-
-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
-
-https://nuget.pkg.github.com/IncubadoraDigital/index.json
-
-
-
-
-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
-
-
-
-
-
-<?xml version="1.0" encoding="utf-8"?>
-
-<configuration>
-
-<packageSources>
-
-<add  key="nuget.org"  value="https://api.nuget.org/v3/index.json"  protocolVersion="3" />
-
-<add  key="github"  value="https://nuget.pkg.github.com/IncubadoraDigital/index.json" />
-
-<add  key="Microsoft Visual Studio Offline Packages"
-
-value="C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\" />
-
-</packageSources>
-
-<packageRestore>
-
-<add  key="enabled"  value="True" />
-
-<add  key="automatic"  value="True" />
-
-</packageRestore>
-
-<bindingRedirects>
-
-<add  key="skip"  value="False" />
-
-</bindingRedirects>
-
-<packageSourceCredentials>
-
-<github>
-
-<add  key="Username"  value="61936_bindust" />
-
-<add  key="ClearTextPassword"  value="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" />
-
-</github>
-
-</packageSourceCredentials>
-
-<packageManagement>
-
-<add  key="format"  value="0" />
-
-<add  key="disabled"  value="False" />
-
-</packageManagement>
-
-</configuration>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3MTY2MTQ2LDIzNzkzNjc2MSwtMTU3MT
-I4MDUyLC04MDcwNDc0ODMsMTg3OTIyOTI0MSwtNzM5MTg4ODkw
-LDIyNTUzMjMwNCwzNzI0NzI2MzBdfQ==
+eyJoaXN0b3J5IjpbMzMwNjc3MjkyLDg0NzE2NjE0NiwyMzc5Mz
+Y3NjEsLTE1NzEyODA1MiwtODA3MDQ3NDgzLDE4NzkyMjkyNDEs
+LTczOTE4ODg5MCwyMjU1MzIzMDQsMzcyNDcyNjMwXX0=
 -->
