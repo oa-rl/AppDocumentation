@@ -3,9 +3,9 @@
 [http://10.180.140.38:8082/k8s](http://10.180.140.38:8082/k8s)
 
 # SOAP-UI
-1. 
-1. Clic in soap
-2. Clic search WSDL file
+0. Buscar SOAP UI
+1. Clic boton SOAP
+2. Clic "i"
 3. You can search the endpoint (ClienteNatural)
 4. Wait for the request
 5. Clic in XML
@@ -242,8 +242,8 @@ VALUES
 
 (6100,900471,'12/2027',4937,7,2,null,true,'2023-10-31 11:17:57.510417-06',null,null);
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMTczNzI1NSwtMjEzNzM3OTQyNywtMT
-M3NjY3Nzk3NywzMzA2NzcyOTIsODQ3MTY2MTQ2LDIzNzkzNjc2
-MSwtMTU3MTI4MDUyLC04MDcwNDc0ODMsMTg3OTIyOTI0MSwtNz
-M5MTg4ODkwLDIyNTUzMjMwNCwzNzI0NzI2MzBdfQ==
+eyJoaXN0b3J5IjpbLTE0NjQ1ODk1NDEsLTIxMzczNzk0MjcsLT
+EzNzY2Nzc5NzcsMzMwNjc3MjkyLDg0NzE2NjE0NiwyMzc5MzY3
+NjEsLTE1NzEyODA1MiwtODA3MDQ3NDgzLDE4NzkyMjkyNDEsLT
+czOTE4ODg5MCwyMjU1MzIzMDQsMzcyNDcyNjMwXX0=
 -->
