@@ -3,9 +3,7 @@
 [http://10.180.140.38:8082/k8s](http://10.180.140.38:8082/k8s)
 
 # SOAP-UI
-
-
-SOAP-UI
+1. 
 1. Clic in soap
 2. Clic search WSDL file
 3. You can search the endpoint (ClienteNatural)
@@ -244,7 +242,7 @@ VALUES
 
 (6100,900471,'12/2027',4937,7,2,null,true,'2023-10-31 11:17:57.510417-06',null,null);
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3ODQ2NDUwMiwtMjEzNzM3OTQyNywtMT
+eyJoaXN0b3J5IjpbMTMyMTczNzI1NSwtMjEzNzM3OTQyNywtMT
 M3NjY3Nzk3NywzMzA2NzcyOTIsODQ3MTY2MTQ2LDIzNzkzNjc2
 MSwtMTU3MTI4MDUyLC04MDcwNDc0ODMsMTg3OTIyOTI0MSwtNz
 M5MTg4ODkwLDIyNTUzMjMwNCwzNzI0NzI2MzBdfQ==
