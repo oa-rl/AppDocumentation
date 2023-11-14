@@ -2,7 +2,33 @@
 ## Dev
 [http://10.180.140.38:8082/k8s](http://10.180.140.38:8082/k8s)
 
+# SOAP-UI
 
+
+SOAP-UI
+1. Clic in soap
+2. Clic search WSDL file
+3. You can search the endpoint (ClienteNatural)
+4. Wait for the request
+5. Clic in XML
+6. Copy the answeer
+7. Right Clic in the name that was under the file name 
+8. Generate MockService
+9. Remove the word mock in the path file
+10. Clic in the name that is next to the green row
+11. Clic play
+12. clic in the green rows
+13. Copy the path
+14. Go to Visual Studio
+15. Right clic in the project name 
+16. Add "Servicio conectado"
+17. Clic in the plus icon in the second section (OPEN API, WCF ...)
+18. Clic WCF
+19. Click next
+20. paste the URL
+21. Clic ir
+22. next, next, finish
+23. For implement see bi bussiness 390, search this "services.AddSingleton<wsCIFXNIT>" in all project
 
 
 
@@ -78,30 +104,8 @@ git stash show -p
 git stash show -p stash@{1} OR git stash show -p 1 
 
 
-SOAP-UI
-1. Clic in soap
-2. Clic search WSDL file
-3. You can search the endpoint (ClienteNatural)
-4. Wait for the request
-5. Clic in XML
-6. Copy the answeer
-7. Right Clic in the name that was under the file name 
-8. Generate MockService
-9. Remove the word mock in the path file
-10. Clic in the name that is next to the green row
-11. Clic play
-12. clic in the green rows
-13. Copy the path
-14. Go to Visual Studio
-15. Right clic in the project name 
-16. Add "Servicio conectado"
-17. Clic in the plus icon in the second section (OPEN API, WCF ...)
-18. Clic WCF
-19. Click next
-20. paste the URL
-21. Clic ir
-22. next, next, finish
-23. For implement see bi bussiness 390, search this "services.AddSingleton<wsCIFXNIT>" in all project
+
+
 
 
 
@@ -240,8 +244,8 @@ VALUES
 
 (6100,900471,'12/2027',4937,7,2,null,true,'2023-10-31 11:17:57.510417-06',null,null);
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzczNzk0MjcsLTEzNzY2Nzc5NzcsMz
-MwNjc3MjkyLDg0NzE2NjE0NiwyMzc5MzY3NjEsLTE1NzEyODA1
-MiwtODA3MDQ3NDgzLDE4NzkyMjkyNDEsLTczOTE4ODg5MCwyMj
-U1MzIzMDQsMzcyNDcyNjMwXX0=
+eyJoaXN0b3J5IjpbMTg3ODQ2NDUwMiwtMjEzNzM3OTQyNywtMT
+M3NjY3Nzk3NywzMzA2NzcyOTIsODQ3MTY2MTQ2LDIzNzkzNjc2
+MSwtMTU3MTI4MDUyLC04MDcwNDc0ODMsMTg3OTIyOTI0MSwtNz
+M5MTg4ODkwLDIyNTUzMjMwNCwzNzI0NzI2MzBdfQ==
 -->
