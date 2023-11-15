@@ -2,6 +2,16 @@
 ## Dev
 [http://10.180.140.38:8082/k8s](http://10.180.140.38:8082/k8s)
 
+# CloudWatch log Filters
+## Group
+fluent-bit-cloudwatch-
+## Query
+fields @timestamp, @message, @logStream
+| filter @logStream like 'business' and @message like 'tracking'
+
+fields @timestamp, @message, @logStream
+| filter  @message like 'tracking'
+
 # SOAP-UI
 0. Buscar SOAP UI
 1. Clic boton SOAP
@@ -38,15 +48,8 @@ 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
 Jaeger UI
 http://10.180.140.38:8081/search
 
-CloudWatch log Filters
-Group
-fluent-bit-cloudwatch-empresasgt
 
-fields @timestamp, @message, @logStream
-| filter @logStream like 'business' and @message like 'tracking'
 
-fields @timestamp, @message, @logStream
-| filter  @message like 'tracking'
 
 dotnet
 dotnet watch => run with swagger UI
@@ -242,8 +245,9 @@ VALUES
 
 (6100,900471,'12/2027',4937,7,2,null,true,'2023-10-31 11:17:57.510417-06',null,null);
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NjIyODgzMiwtMjEzNzM3OTQyNywtMT
-M3NjY3Nzk3NywzMzA2NzcyOTIsODQ3MTY2MTQ2LDIzNzkzNjc2
-MSwtMTU3MTI4MDUyLC04MDcwNDc0ODMsMTg3OTIyOTI0MSwtNz
-M5MTg4ODkwLDIyNTUzMjMwNCwzNzI0NzI2MzBdfQ==
+eyJoaXN0b3J5IjpbLTU0NDExNTI5NiwxNTY2MjI4ODMyLC0yMT
+M3Mzc5NDI3LC0xMzc2Njc3OTc3LDMzMDY3NzI5Miw4NDcxNjYx
+NDYsMjM3OTM2NzYxLC0xNTcxMjgwNTIsLTgwNzA0NzQ4MywxOD
+c5MjI5MjQxLC03MzkxODg4OTAsMjI1NTMyMzA0LDM3MjQ3MjYz
+MF19
 -->
