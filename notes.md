@@ -105,7 +105,7 @@ git stash show -p
 git stash show -p stash@{1} OR git stash show -p 1 
 
 
-
+gpupdate /force
 
 
 
@@ -117,9 +117,9 @@ git stash show -p stash@{1} OR git stash show -p 1
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjgzMTEwNTUsLTU0NDExNTI5NiwxNT
-Y2MjI4ODMyLC0yMTM3Mzc5NDI3LC0xMzc2Njc3OTc3LDMzMDY3
-NzI5Miw4NDcxNjYxNDYsMjM3OTM2NzYxLC0xNTcxMjgwNTIsLT
-gwNzA0NzQ4MywxODc5MjI5MjQxLC03MzkxODg4OTAsMjI1NTMy
-MzA0LDM3MjQ3MjYzMF19
+eyJoaXN0b3J5IjpbLTgzODkwOTE2NywtNTQ0MTE1Mjk2LDE1Nj
+YyMjg4MzIsLTIxMzczNzk0MjcsLTEzNzY2Nzc5NzcsMzMwNjc3
+MjkyLDg0NzE2NjE0NiwyMzc5MzY3NjEsLTE1NzEyODA1MiwtOD
+A3MDQ3NDgzLDE4NzkyMjkyNDEsLTczOTE4ODg5MCwyMjU1MzIz
+MDQsMzcyNDcyNjMwXX0=
 -->
