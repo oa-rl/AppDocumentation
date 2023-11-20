@@ -38,7 +38,8 @@ fields @timestamp, @message, @logStream
 22. next, next, finish
 23. For implement see bi bussiness 390, search this "services.AddSingleton<wsCIFXNIT>" in all project
 
-
+# Migracion
+dotnet ef migrations add INITIAL --context=DevMigrationContext -o ./Migrations/DevMigration/dotnet ef database update --context=DevMigrationContext
 
 Check point Endpoint Security
 
@@ -117,9 +118,9 @@ gpupdate /force
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzODkwOTE2NywtNTQ0MTE1Mjk2LDE1Nj
-YyMjg4MzIsLTIxMzczNzk0MjcsLTEzNzY2Nzc5NzcsMzMwNjc3
-MjkyLDg0NzE2NjE0NiwyMzc5MzY3NjEsLTE1NzEyODA1MiwtOD
-A3MDQ3NDgzLDE4NzkyMjkyNDEsLTczOTE4ODg5MCwyMjU1MzIz
-MDQsMzcyNDcyNjMwXX0=
+eyJoaXN0b3J5IjpbLTgwMTY5NTE4LC04Mzg5MDkxNjcsLTU0ND
+ExNTI5NiwxNTY2MjI4ODMyLC0yMTM3Mzc5NDI3LC0xMzc2Njc3
+OTc3LDMzMDY3NzI5Miw4NDcxNjYxNDYsMjM3OTM2NzYxLC0xNT
+cxMjgwNTIsLTgwNzA0NzQ4MywxODc5MjI5MjQxLC03MzkxODg4
+OTAsMjI1NTMyMzA0LDM3MjQ3MjYzMF19
 -->
