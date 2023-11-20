@@ -39,7 +39,12 @@ fields @timestamp, @message, @logStream
 23. For implement see bi bussiness 390, search this "services.AddSingleton<wsCIFXNIT>" in all project
 
 # Migracion
-dotnet ef migrations add INITIAL --context=DevMigrationContext -o ./Migrations/DevMigration/dotnet ef database update --context=DevMigrationContext
+
+## Add migration
+dotnet ef migrations add INITIAL --context=DevMigrationContext -o ./Migrations/DevMigration/
+
+## Update migration
+dotnet ef database update --context=DevMigrationContext
 
 Check point Endpoint Security
 
@@ -118,9 +123,9 @@ gpupdate /force
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMTY5NTE4LC04Mzg5MDkxNjcsLTU0ND
-ExNTI5NiwxNTY2MjI4ODMyLC0yMTM3Mzc5NDI3LC0xMzc2Njc3
-OTc3LDMzMDY3NzI5Miw4NDcxNjYxNDYsMjM3OTM2NzYxLC0xNT
-cxMjgwNTIsLTgwNzA0NzQ4MywxODc5MjI5MjQxLC03MzkxODg4
-OTAsMjI1NTMyMzA0LDM3MjQ3MjYzMF19
+eyJoaXN0b3J5IjpbMjA0MzE5MjMxNCwtODM4OTA5MTY3LC01ND
+QxMTUyOTYsMTU2NjIyODgzMiwtMjEzNzM3OTQyNywtMTM3NjY3
+Nzk3NywzMzA2NzcyOTIsODQ3MTY2MTQ2LDIzNzkzNjc2MSwtMT
+U3MTI4MDUyLC04MDcwNDc0ODMsMTg3OTIyOTI0MSwtNzM5MTg4
+ODkwLDIyNTUzMjMwNCwzNzI0NzI2MzBdfQ==
 -->
