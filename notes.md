@@ -346,16 +346,41 @@ return  text;
 
 
 
+// foreach (KeyValuePair<string, List<string>> row in documentDPI)
+
+// {
+
+// string key = row.Key.ToLower().Trim();
+
+// foreach (string word in key.Split(" "))
+
+// {
+
+// if (dictionaryDPI.Contains(word))
+
+// {
+
+// Console.WriteLine(row);
+
+// dpiFound = string.Join("", row.Value.FirstOrDefault()!.ToCharArray().Where(c => !char.IsWhiteSpace(c)));
+
+// }
+
+// }
+
+// }
+
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTM0NzQ2OTksMjA0MzE5MjMxNCwtOD
-M4OTA5MTY3LC01NDQxMTUyOTYsMTU2NjIyODgzMiwtMjEzNzM3
-OTQyNywtMTM3NjY3Nzk3NywzMzA2NzcyOTIsODQ3MTY2MTQ2LD
-IzNzkzNjc2MSwtMTU3MTI4MDUyLC04MDcwNDc0ODMsMTg3OTIy
-OTI0MSwtNzM5MTg4ODkwLDIyNTUzMjMwNCwzNzI0NzI2MzBdfQ
-==
+eyJoaXN0b3J5IjpbLTEyMzM2Njk3MjEsLTIwMTM0NzQ2OTksMj
+A0MzE5MjMxNCwtODM4OTA5MTY3LC01NDQxMTUyOTYsMTU2NjIy
+ODgzMiwtMjEzNzM3OTQyNywtMTM3NjY3Nzk3NywzMzA2NzcyOT
+IsODQ3MTY2MTQ2LDIzNzkzNjc2MSwtMTU3MTI4MDUyLC04MDcw
+NDc0ODMsMTg3OTIyOTI0MSwtNzM5MTg4ODkwLDIyNTUzMjMwNC
+wzNzI0NzI2MzBdfQ==
 -->
