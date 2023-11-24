@@ -113,6 +113,235 @@ git stash show -p stash@{1} OR git stash show -p 1
 
 gpupdate /force
 
+# Textract
+
+## Controller
+
+using  Amazon.Textract.Model;
+
+  
+
+namespace  bi_api_business.ExternalServices.AWS.Interface
+
+{
+
+public  interface  IAWSTools
+
+{
+
+Task<Dictionary<string, List<string>>> TextTrackAsync(AnalyzeDocumentRequest  request);
+
+}
+
+}
+
+
+## Service
+using  Amazon.Textract;
+
+using  Amazon.Textract.Model;
+
+using  bi_api_business.ExternalServices.AWS.Interface;
+
+  
+
+namespace  bi_api_business.ExternalServices.AWS.Implementation
+
+{
+
+public  class  AWSToolsImpl : IAWSTools
+
+{
+
+private  AmazonTextractClient  _textractClient  =  new  AmazonTextractClient();
+
+  
+
+public  async  Task<Dictionary<string, List<string>>> TextTrackAsync(AnalyzeDocumentRequest  request)
+
+{
+
+request.FeatureTypes  =  new  List<string> { "FORMS" };
+
+Dictionary<string, dynamic> key_map  =  new  Dictionary<string, dynamic>();
+
+Dictionary<string, dynamic> value_map  =  new  Dictionary<string, dynamic>();
+
+Dictionary<string, dynamic> block_map  =  new  Dictionary<string, dynamic>();
+
+foreach (Block  block  in (await  _textractClient.AnalyzeDocumentAsync(request)).Blocks)
+
+{
+
+string  block_id  =  block.Id;
+
+block_map[block_id] =  block;
+
+if (block.BlockType  ==  "KEY_VALUE_SET")
+
+{
+
+if (block.EntityTypes.Contains("KEY"))
+
+{
+
+key_map[block_id] =  block;
+
+}
+
+else
+
+{
+
+value_map[block_id] =  block;
+
+}
+
+}
+
+}
+
+  
+
+return  GetKvRelationship(key_map, value_map, block_map);
+
+}
+
+  
+
+public  static  Dictionary<string, List<string>> GetKvRelationship(Dictionary<string, dynamic> keyMap, Dictionary<string, dynamic> valueMap, Dictionary<string, dynamic> blockMap)
+
+{
+
+Dictionary<string, List<string>>?  kvs  =  new();
+
+foreach (KeyValuePair<string, dynamic> kvp  in  keyMap)
+
+{
+
+Block  keyBlock  =  kvp.Value;
+
+Block?  valueBlock  =  FindValueBlock(keyBlock, valueMap);
+
+string  key  =  GetText(keyBlock, blockMap);
+
+string  val  =  GetText(valueBlock, blockMap);
+
+if (!kvs.ContainsKey(key))
+
+{
+
+kvs[key] =  new  List<string>();
+
+}
+
+kvs[key].Add(val);
+
+}
+
+return  kvs;
+
+}
+
+  
+
+public  static  Block?  FindValueBlock(Block  keyBlock, Dictionary<string, dynamic> valueMap)
+
+{
+
+Block  valueBlock  =  new();
+
+List<Relationship> temp  =  keyBlock.Relationships;
+
+foreach (Relationship  relationship  in  keyBlock.Relationships)
+
+{
+
+if (relationship.Type  ==  "VALUE")
+
+{
+
+foreach (string  valueId  in  relationship.Ids)
+
+{
+
+valueBlock  =  valueMap.Where(keyPariValue  =>  keyPariValue.Key  ==  valueId).FirstOrDefault().Value;
+
+}
+
+}
+
+}
+
+return  valueBlock;
+
+}
+
+  
+
+public  static  string  GetText(Block  result, Dictionary<string, dynamic> blocksMap)
+
+{
+
+string  text  =  "";
+
+if (result.Relationships  is  not  null)
+
+{
+
+foreach (Relationship  relationship  in  result.Relationships)
+
+{
+
+if (relationship.Type  ==  "CHILD")
+
+{
+
+foreach (string  childId  in  relationship.Ids)
+
+{
+
+Block  word  =  blocksMap[childId];
+
+if (word.BlockType.Value  ==  "WORD")
+
+{
+
+text  +=  word.Text  +  " ";
+
+}
+
+if (relationship.Type  ==  "SELECTION_ELEMENT")
+
+{
+
+if (word.SelectionStatus.Value  ==  "SELECTED")
+
+{
+
+text  +=  "X ";
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+return  text;
+
+}
+
+  
+
+}
+
+}
 
 
 
@@ -123,9 +352,10 @@ gpupdate /force
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MzE5MjMxNCwtODM4OTA5MTY3LC01ND
-QxMTUyOTYsMTU2NjIyODgzMiwtMjEzNzM3OTQyNywtMTM3NjY3
-Nzk3NywzMzA2NzcyOTIsODQ3MTY2MTQ2LDIzNzkzNjc2MSwtMT
-U3MTI4MDUyLC04MDcwNDc0ODMsMTg3OTIyOTI0MSwtNzM5MTg4
-ODkwLDIyNTUzMjMwNCwzNzI0NzI2MzBdfQ==
+eyJoaXN0b3J5IjpbLTIwMTM0NzQ2OTksMjA0MzE5MjMxNCwtOD
+M4OTA5MTY3LC01NDQxMTUyOTYsMTU2NjIyODgzMiwtMjEzNzM3
+OTQyNywtMTM3NjY3Nzk3NywzMzA2NzcyOTIsODQ3MTY2MTQ2LD
+IzNzkzNjc2MSwtMTU3MTI4MDUyLC04MDcwNDc0ODMsMTg3OTIy
+OTI0MSwtNzM5MTg4ODkwLDIyNTUzMjMwNCwzNzI0NzI2MzBdfQ
+==
 -->
