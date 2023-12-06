@@ -12,6 +12,9 @@ fields @timestamp, @message, @logStream
 fields @timestamp, @message, @logStream
 | filter  @message like 'tracking'
 
+git tag -a v1.1.0 -m "Release v1.1.0" 460b9453a0ae391afc312bb9e3accc35ecc9be78  
+git push origin --tags
+
 
 # Jager
 http://10.180.76.68:8082/
@@ -381,10 +384,10 @@ return  text;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4OTExODExNSwtMTIzMzY2OTcyMSwtMj
-AxMzQ3NDY5OSwyMDQzMTkyMzE0LC04Mzg5MDkxNjcsLTU0NDEx
-NTI5NiwxNTY2MjI4ODMyLC0yMTM3Mzc5NDI3LC0xMzc2Njc3OT
-c3LDMzMDY3NzI5Miw4NDcxNjYxNDYsMjM3OTM2NzYxLC0xNTcx
-MjgwNTIsLTgwNzA0NzQ4MywxODc5MjI5MjQxLC03MzkxODg4OT
-AsMjI1NTMyMzA0LDM3MjQ3MjYzMF19
+eyJoaXN0b3J5IjpbLTk3MDU2Njg2MSwtMzg5MTE4MTE1LC0xMj
+MzNjY5NzIxLC0yMDEzNDc0Njk5LDIwNDMxOTIzMTQsLTgzODkw
+OTE2NywtNTQ0MTE1Mjk2LDE1NjYyMjg4MzIsLTIxMzczNzk0Mj
+csLTEzNzY2Nzc5NzcsMzMwNjc3MjkyLDg0NzE2NjE0NiwyMzc5
+MzY3NjEsLTE1NzEyODA1MiwtODA3MDQ3NDgzLDE4NzkyMjkyND
+EsLTczOTE4ODg5MCwyMjU1MzIzMDQsMzcyNDcyNjMwXX0=
 -->
