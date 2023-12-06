@@ -12,6 +12,8 @@ fields @timestamp, @message, @logStream
 fields @timestamp, @message, @logStream
 | filter  @message like 'tracking'
 
+# Git
+## tagas
 git tag -a v1.1.0 -m "Release v1.1.0" 460b9453a0ae391afc312bb9e3accc35ecc9be78  
 git push origin --tags
 
@@ -384,10 +386,11 @@ return  text;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MDU2Njg2MSwtMzg5MTE4MTE1LC0xMj
-MzNjY5NzIxLC0yMDEzNDc0Njk5LDIwNDMxOTIzMTQsLTgzODkw
-OTE2NywtNTQ0MTE1Mjk2LDE1NjYyMjg4MzIsLTIxMzczNzk0Mj
-csLTEzNzY2Nzc5NzcsMzMwNjc3MjkyLDg0NzE2NjE0NiwyMzc5
-MzY3NjEsLTE1NzEyODA1MiwtODA3MDQ3NDgzLDE4NzkyMjkyND
-EsLTczOTE4ODg5MCwyMjU1MzIzMDQsMzcyNDcyNjMwXX0=
+eyJoaXN0b3J5IjpbLTEyNDg4NDUxOTQsLTk3MDU2Njg2MSwtMz
+g5MTE4MTE1LC0xMjMzNjY5NzIxLC0yMDEzNDc0Njk5LDIwNDMx
+OTIzMTQsLTgzODkwOTE2NywtNTQ0MTE1Mjk2LDE1NjYyMjg4Mz
+IsLTIxMzczNzk0MjcsLTEzNzY2Nzc5NzcsMzMwNjc3MjkyLDg0
+NzE2NjE0NiwyMzc5MzY3NjEsLTE1NzEyODA1MiwtODA3MDQ3ND
+gzLDE4NzkyMjkyNDEsLTczOTE4ODg5MCwyMjU1MzIzMDQsMzcy
+NDcyNjMwXX0=
 -->
