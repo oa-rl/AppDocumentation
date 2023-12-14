@@ -15,6 +15,10 @@ fields @timestamp, @message, @logStream
 filter @message like /ERROR|Error|Exception/ 
 | sort @timestamp desc
 
+filter  @message  like  'business'  and  @message  like  'RabbitQueueSettings'
+
+| sort  @timestamp  desc
+
 # Git
 ## tagas
 git tag -a v1.1.0 -m "Release v1.1.0" 460b9453a0ae391afc312bb9e3accc35ecc9be78  
@@ -389,11 +393,11 @@ return  text;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NzA0NTYwNCwtMTI0ODg0NTE5NCwtOT
-cwNTY2ODYxLC0zODkxMTgxMTUsLTEyMzM2Njk3MjEsLTIwMTM0
-NzQ2OTksMjA0MzE5MjMxNCwtODM4OTA5MTY3LC01NDQxMTUyOT
-YsMTU2NjIyODgzMiwtMjEzNzM3OTQyNywtMTM3NjY3Nzk3Nywz
-MzA2NzcyOTIsODQ3MTY2MTQ2LDIzNzkzNjc2MSwtMTU3MTI4MD
-UyLC04MDcwNDc0ODMsMTg3OTIyOTI0MSwtNzM5MTg4ODkwLDIy
-NTUzMjMwNF19
+eyJoaXN0b3J5IjpbMTc0OTM3ODE3NCwxNzU3MDQ1NjA0LC0xMj
+Q4ODQ1MTk0LC05NzA1NjY4NjEsLTM4OTExODExNSwtMTIzMzY2
+OTcyMSwtMjAxMzQ3NDY5OSwyMDQzMTkyMzE0LC04Mzg5MDkxNj
+csLTU0NDExNTI5NiwxNTY2MjI4ODMyLC0yMTM3Mzc5NDI3LC0x
+Mzc2Njc3OTc3LDMzMDY3NzI5Miw4NDcxNjYxNDYsMjM3OTM2Nz
+YxLC0xNTcxMjgwNTIsLTgwNzA0NzQ4MywxODc5MjI5MjQxLC03
+MzkxODg4OTBdfQ==
 -->
