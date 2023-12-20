@@ -12,7 +12,8 @@ fields @timestamp, @message, @logStream
 fields @timestamp, @message, @logStream
 | filter  @message like 'tracking'
 
- 
+filter @message like /ERROR|Error|Exception/ 
+| sort @timestamp desc
 
 filter  @message  like  'business'  and  @message  like  'RabbitQueueSettings'
 
@@ -392,11 +393,11 @@ return  text;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIxOTM4MDk0LDE3NDkzNzgxNzQsMTc1Nz
-A0NTYwNCwtMTI0ODg0NTE5NCwtOTcwNTY2ODYxLC0zODkxMTgx
-MTUsLTEyMzM2Njk3MjEsLTIwMTM0NzQ2OTksMjA0MzE5MjMxNC
-wtODM4OTA5MTY3LC01NDQxMTUyOTYsMTU2NjIyODgzMiwtMjEz
-NzM3OTQyNywtMTM3NjY3Nzk3NywzMzA2NzcyOTIsODQ3MTY2MT
-Q2LDIzNzkzNjc2MSwtMTU3MTI4MDUyLC04MDcwNDc0ODMsMTg3
-OTIyOTI0MV19
+eyJoaXN0b3J5IjpbMTc0OTM3ODE3NCw0MjE5MzgwOTQsMTc0OT
+M3ODE3NCwxNzU3MDQ1NjA0LC0xMjQ4ODQ1MTk0LC05NzA1NjY4
+NjEsLTM4OTExODExNSwtMTIzMzY2OTcyMSwtMjAxMzQ3NDY5OS
+wyMDQzMTkyMzE0LC04Mzg5MDkxNjcsLTU0NDExNTI5NiwxNTY2
+MjI4ODMyLC0yMTM3Mzc5NDI3LC0xMzc2Njc3OTc3LDMzMDY3Nz
+I5Miw4NDcxNjYxNDYsMjM3OTM2NzYxLC0xNTcxMjgwNTIsLTgw
+NzA0NzQ4M119
 -->
